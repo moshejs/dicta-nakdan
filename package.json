@@ -1,0 +1,56 @@
+{
+  "name": "dicta-nakdan",
+  "version": "1.0.0",
+  "description": "Typed, zero-dependency client for Dicta's free Nakdan API — automatic Hebrew vocalization (niqqud) with per-word alternatives. Add nikud to unpointed Hebrew text.",
+  "keywords": [
+    "hebrew",
+    "nakdan",
+    "niqqud",
+    "nikud",
+    "vocalization",
+    "diacritics",
+    "dicta",
+    "hebrew-nlp",
+    "judaica",
+    "torah",
+    "api-client"
+  ],
+  "homepage": "https://moshemalka.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshejs/dicta-nakdan.git"
+  },
+  "bugs": "https://github.com/moshejs/dicta-nakdan/issues",
+  "author": "Moshe Malka <hello@moshemalka.com> (https://moshemalka.com)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
