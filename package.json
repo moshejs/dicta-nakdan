@@ -1,6 +1,6 @@
 {
   "name": "dicta-nakdan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Typed, zero-dependency client for Dicta's free Nakdan API — automatic Hebrew vocalization (niqqud) with per-word alternatives. Add nikud to unpointed Hebrew text.",
   "keywords": [
     "hebrew",
