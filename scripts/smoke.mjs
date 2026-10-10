@@ -12,4 +12,5 @@ console.log(`words: ${full.words.filter((w) => !w.isSeparator).length}`);
 for (const w of full.words.filter((x) => !x.isSeparator)) {
   console.log(`  ${w.word} → ${w.vocalized}  (${w.options.length} options, confident=${w.confident})`);
 }
+if (pointed.includes("|")) throw new Error("prefix markers leaked into the output");
 console.log("SMOKE OK");
