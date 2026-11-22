@@ -47,6 +47,9 @@ Dicta is a nonprofit and the Nakdan API is offered free with no formal published
 
 By the same author: [`mispar`](https://github.com/moshejs/mispar) (Hebrew gematria, 13 classical methods) and [Gamatria](https://gamatria.vercel.app), a gematria search engine over the Tanakh and Mishnah.
 
+Also by the same author, separate from this package:
+- [Hebrabic](https://hebrabic.com) — a web app that teaches Arabic to Hebrew speakers and Hebrew to Arabic speakers.
+
 ## Author
 
 Built by **[Moshe Malka](https://moshemalka.com)** — engineering leader in New York City. Studio work at [Quentin.Code](https://www.quentin.software/).
